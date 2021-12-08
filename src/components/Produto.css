@@ -1,0 +1,37 @@
+.produto{
+    width: 250px;
+    border-radius: 9px;
+    background: #ffffff;
+    box-shadow:  5px 5px 15px #d9d9d9,
+                -5px -5px 15px #ffffff;
+    padding: 10px 15px;
+    margin-bottom: 1rem;
+    width: calc(25% - 30px);
+    color: #000;
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto img{
+    width: 100%;
+    height: auto;
+}
+
+.nome{
+    font-size: 1.5rem;
+}
+
+.preco{
+    font-weight: lighter;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.desc{
+    margin: .5rem 0 1rem 0;
+}
+
+.produto button{
+    justify-self: flex-end;
+}

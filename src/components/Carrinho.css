@@ -1,0 +1,23 @@
+.img{
+    width: 100px;
+}
+
+.carrinho{
+    width: 70vw;
+}
+
+.body{
+    display: flex;
+    justify-content: space-around;
+}
+
+.body button{
+    height: 100%;
+    background-color: rgb(72, 247, 19);
+    color: #fff;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    margin-top: 5rem;
+    padding: 1rem;
+}
