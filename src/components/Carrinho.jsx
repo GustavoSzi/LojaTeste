@@ -4,7 +4,6 @@ import './Carrinho.css'
 
 function Carrinho() {
     const [produtos, setProdutos] = React.useState(null)
-    const [precototal, setTotal] = React.useState(0)
    
     
 
@@ -23,14 +22,6 @@ function Carrinho() {
         console.log(jsonitens);
         carrinhoToArray(jsonitens)
     }, [])
-
-    function getTotal(){
-        let total = 0
-        produtos.forEach(prod => {
-            total = total + (prod.quantity * prod.preco)
-        });
-        setTotal(total)
-    }
 
     return (
         <div>
@@ -55,7 +46,6 @@ function Carrinho() {
                 })}
                 </table>
                 <div>
-                    <h2>R$ {precototal}</h2>
                     <button>
                         Finalizar compra
                     </button>
